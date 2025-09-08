@@ -1,0 +1,152 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Great+Vibes&family=Homemade+Apple&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Charulatha.D styling */
+        header h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3em;
+            animation: blinkColors 1s infinite;
+        }
+
+        @keyframes blinkColors {
+            0%   { color: red; }
+            25%  { color: orange; }
+            50%  { color: green; }
+            75%  { color: blue; }
+            100% { color: violet; }
+        }
+
+        nav {
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        /* Project name styling */
+        .project h3 {
+            font-family: 'Great Vibes', cursive;
+            color: hotpink;
+            animation: slideIn 3s infinite alternate;
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateX(-10px); }
+            100% { transform: translateX(10px); }
+        }
+
+        /* Contact Me heading */
+        #contact h2 {
+            font-family: 'Homemade Apple', cursive;
+            color: #4B0082; /* Ink-like dark purple */
+            animation: floatText 3s ease-in-out infinite;
+        }
+
+        @keyframes floatText {
+            0%   { transform: translateY(0); }
+            50%  { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        /* Form styling (basic) */
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        input, textarea {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 1em;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Charulatha.D</h1>
+        <p>Computer Science Student</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate Computer Science student interested in web development, machine learning, and open-source projects.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Weather App</h3>
+            <p>A simple weather application using OpenWeatherMap API.</p>
+        </div>
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>This portfolio is a showcase of my work and skills using HTML, CSS, and JavaScript.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="dcharulatha02@gmail.com" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+            <p id="formStatus"></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Charulatha.D. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
